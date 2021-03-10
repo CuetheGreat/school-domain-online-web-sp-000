@@ -23,9 +23,7 @@ class School
   end
   
   def grade(grade_num)
-    ROSTER.find { |i,value| i ==
-      end
-    end
+    ROSTER.find { |key,value| value if key == grade_num }
   end
   
   
