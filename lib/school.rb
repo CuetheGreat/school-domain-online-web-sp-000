@@ -28,7 +28,8 @@ class School
   
   
   def sort
-    ROSTER.sort_by { |key, value| key}
+    ROSTER.each do |key, val|
+      
   end
     
 end
