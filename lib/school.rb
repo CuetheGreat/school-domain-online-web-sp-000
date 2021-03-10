@@ -13,9 +13,7 @@ class School
   end
   
   def add_student(name, grade)
-     key = ROSTER.keys.find { |i| i == grade }
-     puts key
-    if key
+    if ROSTER.keys.include?(grade)
       ROSTER[grade] << name
     else
       ROSTER[grade] = []
