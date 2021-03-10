@@ -32,8 +32,7 @@ class School
     ROSTER.each do |key, val|
        new_roster[key] = val.sort{ |a,b| a<=>b}
     end
-    collection.each do |i|
-      new_roster
+    new_roster
   end
     
 end
