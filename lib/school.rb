@@ -24,7 +24,6 @@ class School
   
   def grade(grade_num)
     ROSTER.collect do |key, value|
-      puts key
       if key == grade_num
         value
       end
