@@ -28,7 +28,9 @@ class School
   
   
   def sort
-    ROSTER[h.sort]
+    collection = ROSTER.collect do |key, val|
+      ROSTER[key].sort { |a,b| a<=>b }
+    end
   end
     
 end
