@@ -28,13 +28,7 @@ class School
   
   
   def sort
-    ROSTER.sort.to_h
-    ROSTER.collect do |key, value|
-      value.sort do |a,b|
-        a <=> b
-      end
-      key => value
-    end
+    
   end
     
 end
