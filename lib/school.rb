@@ -28,7 +28,7 @@ class School
   
   
   def sort
-    ROSTER.each do |key, val|
+    ROSTER.sort { |a,b| a <=> b }
       
   end
     
