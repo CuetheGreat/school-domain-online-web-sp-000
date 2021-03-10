@@ -28,7 +28,7 @@ class School
   
   
   def sort
-    ROSTER
+    ROSTER.sort.to_h
     end
   end
     
