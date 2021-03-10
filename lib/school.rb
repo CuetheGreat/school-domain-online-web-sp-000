@@ -28,7 +28,7 @@ class School
   
   
   def sort
-    ROSTER.sort { |a,b| ROSTER[a] <=> ROSTER[b] }
+    ROSTER
     end
   end
     
