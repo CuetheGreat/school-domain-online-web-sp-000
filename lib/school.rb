@@ -29,8 +29,8 @@ class School
   
   def sort
     new_roster = {}
-    collection = ROSTER.collect do |key, val|
-      {key => ROSTER[key].sort { |a,b| a<=>b }}
+    ROSTER.each do |key, val|
+       new_roster[key] = val.sort{ |a,b| a<=>b}
     end
     collection.each do |i|
       new_roster
