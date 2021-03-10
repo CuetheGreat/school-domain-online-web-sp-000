@@ -30,7 +30,10 @@ class School
   def sort
     ROSTER.sort.to_h
     ROSTER.collect do |key, value|
-      key => value.sort
+      value.sort do |a,b|
+        a <=> b
+      end
+      {key => value}
     end
   end
     
