@@ -28,10 +28,7 @@ class School
   
   
   def sort
-    ROSTER.sort { |a,b|  a[1] <=> b[1] }
-    
-    ROSTER.each do |key, val|
-      ROSTER[key].sort { |a,b| a <=> b }
+    ROSTER.sort { |a,b| ROSTER[a] <=> ROSTER[b] }
     end
   end
     
