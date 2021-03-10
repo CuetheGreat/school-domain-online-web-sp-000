@@ -31,7 +31,7 @@ class School
     ROSTER.sort { |a,b|  a <=> b }
     
     ROSTER.each do |key, val|
-      val.sort { |a,b| a <=> b }
+      ROSTER[key].sort { |a,b| a <=> b }
     end
   end
     
