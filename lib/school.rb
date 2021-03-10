@@ -33,7 +33,7 @@ class School
       value.sort do |a,b|
         a <=> b
       end
-      {key => value}
+      key => value
     end
   end
     
