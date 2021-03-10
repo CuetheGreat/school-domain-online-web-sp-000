@@ -29,7 +29,7 @@ class School
   
   def sort
     ROSTER.sort.to_h
-    ROSTER.map {|key, val| val.sort }
+    ROSTER.map {|key, val| val.sort }.to_h
   end
     
 end
