@@ -23,8 +23,7 @@ class School
   end
   
   def grade(grade_num)
-    ROSTER.collect do |key, value|
-        value
+    ROSTER.find { |i,value| i ==
       end
     end
   end
