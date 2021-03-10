@@ -29,7 +29,7 @@ class School
   
   def sort
     collection = ROSTER.collect do |key, val|
-      {key.value: ROSTER[key].sort { |a,b| a<=>b }}
+      {key => ROSTER[key].sort { |a,b| a<=>b }}
     end
     collection
   end
