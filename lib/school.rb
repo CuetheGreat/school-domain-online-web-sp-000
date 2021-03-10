@@ -19,7 +19,7 @@ class School
       ROSTER[grade] = []
       ROSTER[grade] << name
     end
-    roster.clear
+    ROSTER.clear
   end
   
   def grade(grade_num)
