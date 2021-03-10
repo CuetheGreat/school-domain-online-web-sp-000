@@ -28,10 +28,12 @@ class School
   
   
   def sort
+    new_roster = {}
     collection = ROSTER.collect do |key, val|
       {key => ROSTER[key].sort { |a,b| a<=>b }}
     end
-    collection[0]
+    collection.each do |i|
+      new_roster
   end
     
 end
