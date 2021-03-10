@@ -28,7 +28,7 @@ class School
   
   
   def sort
-    ROSTER
+    ROSTER.sort_by { |key, value| key}
   end
     
 end
