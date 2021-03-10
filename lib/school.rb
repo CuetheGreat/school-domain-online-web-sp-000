@@ -23,7 +23,7 @@ class School
   end
   
   def grade(grade_num)
-    ROSTER.select do |key, value|
+    ROSTER.collect do |key, value|
       puts key
       if key == grade_num
         value
