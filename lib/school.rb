@@ -29,7 +29,7 @@ class School
   
   def sort
     ROSTER.sort.to_h
-    ROSTER.colect { |key, value| key => value.sort }
+    ROSTER.collect { |key, value| key => value.sort }
     end
   end
     
