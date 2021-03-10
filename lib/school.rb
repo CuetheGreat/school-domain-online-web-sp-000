@@ -31,7 +31,7 @@ class School
     collection = ROSTER.collect do |key, val|
       {key => ROSTER[key].sort { |a,b| a<=>b }}
     end
-    collection
+    collection.to_h
   end
     
 end
