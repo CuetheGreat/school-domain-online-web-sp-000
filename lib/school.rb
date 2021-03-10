@@ -29,7 +29,9 @@ class School
   
   def sort
     ROSTER.sort.to_h
-    ROSTER.each {|key, val| val.sort }.to_h
+    ROSTER.colect { |key, value|
+      {key => value.sort}
+    end
   end
     
 end
